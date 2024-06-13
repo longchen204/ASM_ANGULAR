@@ -1,0 +1,160 @@
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+/>
+<div class="min-h-screen flex flex-row">
+  <div
+    class="flex flex-col w-56 bg-gray-400 rounded-r-3xl overflow-hidden shadow-2xl"
+  >
+    <div class="flex items-center justify-center h-20 shadow-md">
+      <h1 class="text-3xl uppercase text-indigo-500">Long Chen</h1>
+    </div>
+    <ul class="flex flex-col py-4">
+      <li>
+        <a
+          href="admin"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-home"></i
+          ></span>
+          <span class="text-sm font-medium">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="admin/listCate"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-music"></i
+          ></span>
+          <span class="text-sm font-medium">Category</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-drink"></i
+          ></span>
+          <span class="text-sm font-medium">Drink</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-shopping-bag"></i
+          ></span>
+          <span class="text-sm font-medium">Shopping</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-chat"></i
+          ></span>
+          <span class="text-sm font-medium">Chat</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-user"></i
+          ></span>
+          <span class="text-sm font-medium">Profile</span>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/home"
+          class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-200 hover:text-gray-800"
+        >
+          <span
+            class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+            ><i class="bx bx-log-out"></i
+          ></span>
+          <span class="text-sm font-medium">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- san pham -->
+
+  <div class="w-[83%] mt-20 mx-auto">
+    <a href="admin/addPro">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center mb-5"
+      >
+        Thêm Sản Phẩm
+      </button>
+    </a>
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border"
+    >
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+      >
+        <tr class="border">
+          <th scope="col" class="px-6 py-3 text-center">Product name</th>
+          <th scope="col" class="px-6 py-3">Image</th>
+          <th scope="col" class="px-6 py-3 text-center">Category</th>
+          <th scope="col" class="px-6 py-3 text-center">Price</th>
+
+          <th scope="col" class="px-6 py-3 text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+          *ngFor="let product of products; let i = index"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+          >
+            {{ product.name }}
+          </th>
+          <td class="px-6 py-4">
+            <img [src]="product.image" alt="" class="h-[100px] w-[100px]" />
+          </td>
+          <td class="px-6 py-4 text-center">{{ product.category }}</td>
+          <td class="px-6 py-4 text-center">${{ product.price }}</td>
+          <td class="px-6 py-4 text-center">
+            <a href="admin/products/edit/{{ product.id }}">
+              <button
+                class="bg-green-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center"
+              >
+                Edit
+              </button>
+            </a>
+            <button
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-4 text-center"
+              (click)="onDelete(product.id)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

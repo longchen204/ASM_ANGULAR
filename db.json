@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "name": "Mới Sửa",
+      "category": "Tay cầm",
+      "image": "../../../assets/Image/headphone-instance@3x.png",
+      "price": 200,
+      "id": "2"
+    },
+    {
+      "name": "Play game",
+      "category": "Phone",
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-card-40-iphone15prohero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369818",
+      "price": 300,
+      "id": "3"
+    },
+    {
+      "name": "Wireless headphones",
+      "category": "Tablet",
+      "image": "https://m.media-amazon.com/images/I/619f09kK7tL._AC_UF894,1000_QL80_.jpg",
+      "price": 300,
+      "id": "5"
+    },
+    {
+      "name": "Play game",
+      "category": "Tablet",
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2023/09/13/iphone-15-plus-green-pure-back-iphone-15-plus-green-pure-front-2up-screen-usen.png",
+      "price": 300,
+      "id": "7"
+    },
+    {
+      "name": "Play game",
+      "category": "Tablet",
+      "image": "../../../assets/Image/taychoibe.png",
+      "price": 300,
+      "id": "8"
+    },
+    {
+      "name": "Play game",
+      "category": "Phone",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ABYbwEJlt2zHvi_qsMwYgicq-2oTNuvobg&s",
+      "price": 22,
+      "id": "xLm0ct4"
+    },
+    {
+      "name": "Iphone 15 Pro",
+      "category": "Phone",
+      "image": "https://media.very.co.uk/i/very/VPZ1K_SQ1_0000000004_BLACK_SLf?$300x400_retinamobilex2$&$roundel_very$&p1_img=blank_apple",
+      "price": 2221,
+      "id": "7IM9B-B"
+    },
+    {
+      "name": "Laptop mới",
+      "category": "Laptop",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/309375/asus-vivobook-16-x1605va-i5-mb360w-thumb-laptop-600x600.jpg",
+      "price": 2500,
+      "id": "uaqzLqC"
+    }
+  ],
+  "category": [
+    {
+      "id": "2",
+      "name": "Phone"
+    },
+    {
+      "id": "3",
+      "name": "Tablet"
+    },
+    {
+      "name": "Điện Thoai",
+      "id": "o5lwz0Y"
+    },
+    {
+      "name": "Tay cầm",
+      "id": "te_sHuB"
+    },
+    {
+      "name": "Laptop",
+      "id": "DlQ5ERr"
+    }
+  ],
+  "users": [
+    {
+      "email": "long@gmail.com",
+      "password": "$2a$10$4TEYI5dGE1cC29Pu7lBDGehGJhHWDOBV3jxeavvYmaLQ/h/pmr6uS",
+      "name": "Long Chen",
+      "id": 1
+    },
+    {
+      "email": "long1@gmail.com",
+      "password": "$2a$10$XIHlT98xzsb1sA0tn6NhsuGkmFj1qE7TGwxDpY9WSRy.7ocYRqMPm",
+      "name": "LOng Chen",
+      "id": 2
+    },
+    {
+      "email": "long1@gmail.com",
+      "password": "$2a$10$ZllMzuh8MUVDiJzJHDWypuRpYrB.JBVT99zVMNTFLkYLrOMM0WoA6",
+      "name": "LOng Chen",
+      "id": 3
+    },
+    {
+      "email": "longchen@gmail.com",
+      "password": "$2a$10$3pPowOlVwgkcDB.4.PgpGuczTfpFPtkrG5o42YcNqdWoCvUSUGMwW",
+      "name": "Long Chen 12",
+      "id": 4
+    },
+    {
+      "email": "longhh@gmail.com",
+      "password": "$2a$10$jvkd9aiZiYat.B2AyTho9esqsVeeI8c5DqlPx4kpTKRqRRrxTRk/C",
+      "name": "long 1111",
+      "id": 5
+    }
+  ]
+}

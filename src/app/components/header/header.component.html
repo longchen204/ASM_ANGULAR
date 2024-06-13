@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electon Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="bg-white border-b border-gray-200">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center text-sm text-gray-600"
+      >
+        <div>Need help? Call us: (+98) 0234 456 789</div>
+        <div class="flex space-x-4">
+          <a href="#" class="flex items-center"
+            ><img
+              src="../../../assets/Image/vuesaxlinearlocation.svg"
+              alt="Store Icon"
+              class="mr-1"
+            />
+            Our store</a
+          >
+          <a href="#" class="flex items-center"
+            ><img
+              src="../../../assets/Image/vuesaxlineargroup.svg"
+              alt="Track Icon"
+              class="mr-1"
+            />
+            Track your order</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Main header -->
+    <header class="bg-blue-950">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex w-full justify-end">
+          <div class="flex items-center ml-10 h-[50px]">
+            <img
+              src="../../../assets/Image/logobanner.png"
+              alt="Electon Logo"
+              class="h-[40px]"
+            />
+          </div>
+
+          <!-- Search bar -->
+          <div class="flex flex-1 justify-center">
+            <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+              <input
+                type="text"
+                placeholder="Search any things"
+                class="px-4 py-2 rounded-l-md focus:outline-none"
+                formControlName="keywords"
+              />
+              <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-r-md"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <!-- <form
+            [formGroup]="searchForm"
+            class="flex flex-1 justify-center"
+            (ngSubmit)="(onSearch)"
+          >
+            <input
+              type="text"
+              placeholder="Search any things"
+              class="w-2/3 px-4 py-2 rounded-l-md focus:outline-none"
+              formControlName="keywords"
+            />
+
+            <button
+              class="bg-yellow-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-200"
+              type="submit"
+            >
+              Search
+            </button>
+          </form> -->
+        </div>
+
+        <!-- Icons and links -->
+        <div class="flex items-center space-x-6 text-white gap-5">
+          <a href="#" class="flex items-center w-[100px]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+
+            Sign in</a
+          >
+          <div class="flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              />
+            </svg>
+            <div
+              class="border-[0] h-5 w-5 flex justify-center items-center bg-orange-400 rounded-full font-thin text-xs"
+            >
+              0
+            </div>
+
+            <a href="#" class="flex items-center ml-3"> Wishlist</a>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+
+            <div
+              class="border-[0] h-5 w-5 flex justify-center items-center bg-orange-400 rounded-full font-thin text-xs"
+            >
+              0
+            </div>
+            <a href="#" class="flex items-center ml-3"> Cart</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow h-[100px]">
+      <div
+        class="container mx-auto px-6 py-[2px] flex justify-between items-center"
+      >
+        <!-- Categories dropdown -->
+        <div class="mt-4">
+          <button
+            class="bg-yellow-500 h-[50px] text-white px-6 py-4 rounded-md flex items-center focus:outline-none"
+          >
+            Browse categories <span class="ml-2">&#x25BE;</span>
+          </button>
+          <!-- Dropdown menu -->
+          <!-- Add dropdown items here -->
+        </div>
+
+        <!-- Menu links -->
+        <div class="ml-32 mt-5 flex space-x-10 text-gray-700 w-[900px]">
+          <div class="flex gap-14">
+            @for (menu of menus; track $index) {
+            <div *ngIf="menu.parent === 0" class="flex">
+              <a
+                href="{{ menu.path }}"
+                class="hover:text-blue-500 font-[20px] font-semibold"
+              >
+                {{ menu.name }}
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+
+            }
+          </div>
+        </div>
+        <!-- Promo text -->
+        <div class="text-blue-500 mt-5 w-[200px]">30 Days Free Return</div>
+      </div>
+    </nav>
+  </body>
+</html>
+<br />
